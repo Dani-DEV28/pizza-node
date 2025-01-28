@@ -10,6 +10,10 @@ app.get('/', (req,res) => {
     res.sendFile(`${import.meta.dirname}/views/home.html`);
 });
 
+app.get('/thankyou', (req,res)=>{
+    res.sendFile(`${import.meta.dirname}/views/thankyou.html`);
+});
+
 app.listen(PORT, () => {
-    console.log(`Server is running at https://localhost:${PORT}`);
+    console.log(`Server is running at http://localhost:${PORT}`);
 });
